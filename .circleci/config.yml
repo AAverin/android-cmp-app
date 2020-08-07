@@ -15,4 +15,5 @@ jobs:
 
     steps:
       - checkout
+      - run: touch local.properties
       - run: ./gradlew test --quiet --build-cache
